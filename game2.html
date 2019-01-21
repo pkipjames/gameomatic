@@ -694,6 +694,7 @@ CanvasDisplay.prototype.drawActors = function() {
 };
 </script>
 <body>
+  <button onclick="var game=document.body.querySelector('canvas');game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
   <script>
     runGame(GAME_LEVELS, CanvasDisplay);
   </script>
