@@ -1,6 +1,8 @@
 <!-- Run code here in the context of Chapter 15-->
 
 <!doctype html>
+<html manifest="cache.manifest">
+  <head>
 <script>
   var simpleLevelPlan = [
   "                      ",
@@ -693,9 +695,11 @@ CanvasDisplay.prototype.drawActors = function() {
   }, this);
 };
 </script>
+  </head>
 <body>
   <button onclick="var game=document.body.querySelector('canvas');game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
   <script>
     runGame(GAME_LEVELS, CanvasDisplay);
   </script>
 </body>
+</html>
