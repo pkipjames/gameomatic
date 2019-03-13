@@ -699,5 +699,22 @@ CanvasDisplay.prototype.drawActors = function() {
   <script>
     runGame(GAME_LEVELS, CanvasDisplay);
   </script>
+  <hr/>
+  <button style="font-size:29px;" onmousedown="arrows['left']=true;"
+          onmouseup="arrows['left']=false;"
+          ontouchstart="arrows['left']=true;"
+          ontouchend="arrows['left']=false;"
+          >&lt;</button>
+   <button style="margin-left:20px;font-size:29px;" onmousedown="arrows['up']=true;"
+          onmouseup="arrows['up']=false;"
+          ontouchstart="arrows['up']=true;"
+          ontouchend="arrows['up']=false;"
+          >/\</button>
+   <button style="margin-left:20px;font-size:29px;" onmousedown="arrows['right']=true;"
+          onmouseup="arrows['right']=false;"
+          ontouchstart="arrows['right']=true;"
+          ontouchend="arrows['right']=false;"
+          >&gt;</button>
+  <hr/>
 </body>
 </html>
